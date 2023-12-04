@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    /* margin: auto; */
+}
+
+.index-body {
+    background-color: #6db966;
+}
+
+.textbox {
+    margin: auto;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    padding-top: 15%;
+}
+
+h1, h2, ul, p {
+    color: white;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+.parent {
+    display:grid;
+    /* grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 2fr 1fr;
+    /* grid-template-areas: 
+        'navbar navbar navbar'
+        'empty main empty'
+        'weather weather weather'
+        'ticker ticker ticker';
+     align-content: end;
+    justify-content: end; */
+}
+
+.navbar {
+    color: white;
+    font-family: sans-serif;
+}
+
+/*.main {
+    grid-area: main;
+}
+
+.weather {
+    grid-area: weather;
+}
+
+.ticker {
+    grid-area: ticker;
+}
+
+.slider {
+    grid-area: main;
+} */
+
+.slider {
+    overflow: hidden;
+    width: 75vw;
+    height: 75vh;
+    position: relative;
+    margin:auto;
+   }
+    
+   .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 16.5s infinite;
+   }
+    
+   .slider .slide:nth-child(1) {
+      background-image: url('images/1.png');
+      animation-delay: 0s;
+   }
+   
+   .slider .slide:nth-child(2) {
+      background-image: url('images/2.png');
+      animation-delay: -5.5s;
+   }
+   
+   .slider .slide:nth-child(3) {
+      background-image: url('images/3.png');
+      animation-delay: -11s;
+   }
+   
+   @keyframes slider {
+    0%, 30%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    33% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    97% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+   }
