@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome-dash</title>
     <link rel="stylesheet" href="style.css">
-    <title>The Reader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body class="index-body">
-    <div class="textbox">
-    <h1>Welcome!</h1>
-    <h2>Everything is fine.</h2>
-    <p>Select your screen: </p>
-    <ul>
-        <li><a href="welcome-area.html">Welcome area</a></li>
-        <li>ICP screen one</li>
-        <li>ICP Screen two</li>
-    </ul>
+<body>
+    <div class="container">
+        <div class="date-time">12:00PM Wednesday 43rd November</div>
+        <div class="carousel">
+            <div class="slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+        </div>
+        
+        <div class="ticker-container">
+            <div class="ticker-wrapper">
+                <div class="ticker-transition">
+                    <div class="ticker-item">Event #1</div>
+                    <div class="ticker-item">Event #2</div>
+                    <div class="ticker-item">Event #3</div>
+                    <div class="ticker-item">Event #4</div>
+                </div>
+            </div>
+        </div>
+        <div class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/53d41n2d99/liverpool/" data-label_1="The Reader" data-label_2="Calderstones Park" data-font="Roboto" data-icons="Climacons Animated" data-days="5" data-theme="dark" >The Reader Calderstones Park</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+        </div>
     </div>
-    </body>
     
 </body>
 </html>

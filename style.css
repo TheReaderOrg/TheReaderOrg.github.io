@@ -1,62 +1,91 @@
 body {
     background-color: black;
-    /* margin: auto; */
+    margin: 0;
+    padding: 0;
 }
 
-.index-body {
-    background-color: #6db966;
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
 }
 
-.textbox {
-    margin: auto;
-    width: 50%;
-    height: 90%;
-    text-align: center;
-    padding-top: 15%;
-}
-
-h1, h2, ul, p {
+.date-time {
+    background-color: black;
+    flex-basis: 60px;
+    font-family: 'Roboto', sans-serif;
     color: white;
-    list-style-type: none;
+    font-size: 30px;
+
 }
 
-h1 {
-    font-size: 75px;
-}
-
-.parent {
-    display:grid;
-    /* grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 4fr 2fr 1fr;
-    /* grid-template-areas: 
-        'navbar navbar navbar'
-        'empty main empty'
-        'weather weather weather'
-        'ticker ticker ticker';
-     align-content: end;
-    justify-content: end; */
-}
-
-.navbar {
-    color: white;
-    font-family: sans-serif;
-}
-
-/*.main {
-    grid-area: main;
+.carousel {
+    background-color: black;
+    flex-grow: 1;
 }
 
 .weather {
-    grid-area: weather;
+    background-color: black;
+    flex-basis: 100px;
 }
 
-.ticker {
-    grid-area: ticker;
+.ticker-container {
+    background-color: black;
+    flex-basis: 60px;
 }
 
-.slider {
-    grid-area: main;
-} */
+
+
+/*css ticker */
+
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-wrapper {
+    width: 100%;
+    padding-left: 100%;
+    background-color: transparent;
+}
+
+@keyframes ticker {
+    0% 
+    {
+        transform: translate3d(0, 0, 0);
+    }
+    100% 
+    {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-transition {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+}
+
+.ticker-transition:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+/*carousel*/
 
 .slider {
     overflow: hidden;
