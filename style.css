@@ -39,7 +39,7 @@ body {
 
 /*css ticker */
 
-.ticker-container {
+/* .ticker-container {
     width: 100%;
     overflow: hidden;
 }
@@ -83,7 +83,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
+ */
 
 /*carousel*/
 
@@ -119,6 +119,11 @@ body {
    .slider .slide:nth-child(3) {
       background-image: url('images/3.png');
       animation-delay: -11s;
+   }
+
+   .slider .slide:nth-child(4) {
+      background-image: url('images/4.png');
+      animation-delay: -16.5s;
    }
    
    @keyframes slider {
