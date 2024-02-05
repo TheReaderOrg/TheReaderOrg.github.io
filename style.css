@@ -11,29 +11,29 @@ body {
     flex-direction: column;
 }
 
-.date-time {
+/* .date-time {
     background-color: black;
     flex-basis: 60px;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 30px;
 
-}
+} */
 
 .carousel {
     background-color: black;
     flex-grow: 1;
 }
 
-.weather {
+/* .weather {
     background-color: black;
     flex-basis: 100px;
-}
+} */
 
-.ticker-container {
+/* .ticker-container {
     background-color: black;
     flex-basis: 60px;
-}
+} */
 
 
 
@@ -89,8 +89,8 @@ body {
 
 .slider {
     overflow: hidden;
-    width: 75vw;
-    height: 75vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     margin:auto;
    }
