@@ -25,10 +25,10 @@ body {
     flex-grow: 1;
 }
 
-/* .weather {
+.weather {
     background-color: black;
     flex-basis: 100px;
-} */
+}
 
 /* .ticker-container {
     background-color: black;
