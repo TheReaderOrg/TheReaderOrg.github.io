@@ -91,7 +91,7 @@ body {
 
 .slider {
     overflow: hidden;
-    width: 85vw;
+    width: 100vw;
     height: 95vh;
     position: relative;
     margin:auto;
