@@ -105,7 +105,7 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    animation: slider 121s infinite;
+    animation: slider 115.5s infinite;
    }
     
    .slider .slide:nth-child(1) {
