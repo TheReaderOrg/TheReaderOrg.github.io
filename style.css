@@ -109,22 +109,22 @@ body {
    }
     
    .slider .slide:nth-child(1) {
-      background-image: url('images/1.png');
+      background-image: url('images/1.jpg');
       animation-delay: 0s;
    }
    
    .slider .slide:nth-child(2) {
-      background-image: url('images/2.png');
+      background-image: url('images/2.jpg');
       animation-delay: -5.5s;
    }
    
    .slider .slide:nth-child(3) {
-      background-image: url('images/3.png');
+      background-image: url('images/3.jpg');
       animation-delay: -11s;
    }
 
    .slider .slide:nth-child(4) {
-      background-image: url('images/4.png');
+      background-image: url('images/4.jpg');
       animation-delay: -16.5s;
    }
    
