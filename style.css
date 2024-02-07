@@ -22,11 +22,11 @@ body {
 
 } */
 
-.carousel {
+/* .carousel {
     background-color: black;
     flex-grow: 1;
 }
-
+ */
 .weather {
     background-color: black;
     flex-basis: 100px;
@@ -92,7 +92,7 @@ body {
 .slider {
     overflow: hidden;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     margin:auto;
    }
